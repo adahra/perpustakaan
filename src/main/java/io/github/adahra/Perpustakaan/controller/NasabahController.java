@@ -11,17 +11,17 @@ import io.github.adahra.Perpustakaan.model.Nasabah;
 import io.github.adahra.Perpustakaan.repository.NasabahRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author sebangsa
  */
-@Controller
+@RestController
 @RequestMapping(path = "/nasabah")
 public class NasabahController {
     @Autowired
@@ -39,12 +39,12 @@ public class NasabahController {
     public @ResponseBody
     ObjectNode getCountNasabah() {
         ObjectNode objectNode = objectMapper.createObjectNode();
-         objectNode.put("count_nasabah", nasabahRepository.count());
+        objectNode.put("count_nasabah", nasabahRepository.count());
         return objectNode;
     }
     
     @GetMapping(path = "/{id}")
-    public List<Nasabah> read(@PathVariable String id) {
+    public List<Nasabah> read(@PathVariable("id") String id) {
         return nasabahRepository.findByNasabahId(id);
     }
 }
