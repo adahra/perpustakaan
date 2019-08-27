@@ -1,7 +1,7 @@
-package io.github.adahra.Perpustakaan.services;
+package io.github.adahra.perpustakaan.services;
 
-import io.github.adahra.Perpustakaan.model.User;
-import io.github.adahra.Perpustakaan.repository.UserRepository;
+import io.github.adahra.perpustakaan.model.User;
+import io.github.adahra.perpustakaan.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

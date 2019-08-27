@@ -1,4 +1,4 @@
-package io.github.adahra.Perpustakaan;
+package io.github.adahra.perpustakaan;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

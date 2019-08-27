@@ -1,6 +1,6 @@
-package io.github.adahra.Perpustakaan.services;
+package io.github.adahra.perpustakaan.services;
 
-import io.github.adahra.Perpustakaan.model.User;
+import io.github.adahra.perpustakaan.model.User;
 
 /**
  * @author adnanto

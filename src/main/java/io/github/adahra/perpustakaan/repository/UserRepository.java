@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.github.adahra.Perpustakaan.repository;
+package io.github.adahra.perpustakaan.repository;
 
-import io.github.adahra.Perpustakaan.model.User;
+import io.github.adahra.perpustakaan.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 /**

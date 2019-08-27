@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.github.adahra.Perpustakaan.model;
+package io.github.adahra.perpustakaan.model;
 
 import java.io.Serializable;
 import javax.persistence.Column;
