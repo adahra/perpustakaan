@@ -9,9 +9,8 @@ import io.github.adahra.Perpustakaan.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- *
  * @author sebangsa
  */
 public interface UserRepository extends CrudRepository<User, Integer> {
-    
+
 }
