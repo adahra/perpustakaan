@@ -31,7 +31,7 @@ public class PerpustakaanApplication implements CommandLineRunner {
     @Bean
     public Docket perpustakaanApi() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("io.github.adahra.Perpustakaan")).build();
+                .apis(RequestHandlerSelectors.basePackage("io.github.adahra.perpustakaan")).build();
     }
 
     @Override
