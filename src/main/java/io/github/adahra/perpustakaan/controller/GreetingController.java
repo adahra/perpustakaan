@@ -6,10 +6,11 @@
 package io.github.adahra.perpustakaan.controller;
 
 import io.github.adahra.perpustakaan.model.Greeting;
-import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * @author sebangsa
@@ -22,6 +23,6 @@ public class GreetingController {
 
     @RequestMapping("/hello")
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(String.format(template, name), counter.incrementAndGet());
+        return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 }
